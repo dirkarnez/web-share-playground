@@ -49,8 +49,7 @@
       //   url: 'https://developer.mozilla.org',
       // };
 
-      let shareData = binaryStringToFile({files: [pdfData]}, "12.pdf", "application/pdf");
-
+      let shareData = {files: [binaryStringToFile(pdfData, "12.pdf", "application/pdf")]};
       const btn = document.querySelector('button');
       const resultPara = document.querySelector('.result');
 
